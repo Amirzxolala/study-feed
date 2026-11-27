@@ -1,0 +1,43 @@
+name: telegram-agent
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch: {}
+  push:
+    paths: ["inbox/**"]
+concurrency:
+  group: telegram-agent
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pypdf telethon
+      - name: run agent
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_OWNER_ID: ${{ secrets.TG_OWNER_ID }}
+          TG_ALLOWED_CHATS: ${{ secrets.TG_ALLOWED_CHATS }}
+          LLM_CONFIG: ${{ secrets.LLM_CONFIG }}
+          LLM_KEYS: ${{ secrets.LLM_KEYS }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          TG_API_ID: ${{ secrets.TG_API_ID }}
+          TG_API_HASH: ${{ secrets.TG_API_HASH }}
+          TG_SESSION: ${{ secrets.TG_SESSION }}
+        run: python agent/agent.py
+      - name: commit
+        run: |
+          git config user.name "telegram-agent"
+          git config user.email "agent@users.noreply.github.com"
+          git add -A data inbox
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "agent: update feed"
+          git pull --rebase
+          git push
