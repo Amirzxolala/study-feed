@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27T10:05:22Z",
+ "updated": "2026-11-27T10:07:27Z",
  "items": [
   {
    "id": "i10193c9f7c",
@@ -9,7 +9,7 @@
    "source": "تلگرام",
    "link": "",
    "files": [],
-   "status": "pending",
+   "status": "published",
    "notified": true,
    "tries": 0,
    "msgkeys": [
@@ -26,7 +26,8 @@
    "reliability": "unverified",
    "event_date": null,
    "confidence": 0.0,
-   "section": "news"
+   "section": "news",
+   "reviewed": "2026-11-27T10:07:26Z"
   },
   {
    "id": "ifce29060bb",
