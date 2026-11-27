@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27T08:48:17Z",
+ "updated": "2026-11-27T08:58:01Z",
  "items": [
   {
    "id": "i97adf32dec",
@@ -9,8 +9,8 @@
    "source": "تلگرام",
    "link": "",
    "files": [],
-   "status": "pending",
-   "notified": true,
+   "status": "published",
+   "notified": false,
    "tries": 2,
    "msgkeys": [
     "1634111073:11"
@@ -18,16 +18,23 @@
    "chat_id": 1634111073,
    "mid": 11,
    "created": "2026-11-27T08:39:48Z",
-   "ai_failed": true,
    "cat": "konkur",
-   "title": "#konkur ثبت‌نام کنکور از اول آذر شروع می‌شود.",
-   "summary": "",
-   "body": "#konkur ثبت‌نام کنکور از اول آذر شروع می‌شود.",
-   "tags": [],
+   "title": "آغاز ثبت‌نام کنکور از اول آذر",
+   "summary": "طبق اطلاعیه، ثبت‌نام کنکور سراسری از تاریخ اول آذر ماه آغاز می‌شود.",
+   "body": "ثبت‌نام کنکور از اول آذر شروع می‌شود.",
+   "tags": [
+    "کنکور",
+    "ثبت‌نام کنکور",
+    "اخبار کنکور"
+   ],
    "reliability": "unverified",
-   "confidence": 0.0,
+   "confidence": 1.0,
    "event_date": null,
-   "section": "news"
+   "section": "news",
+   "ai": {
+    "model": "gemini-3.5-flash-lite",
+    "key": 1
+   }
   }
  ],
  "categories": [
