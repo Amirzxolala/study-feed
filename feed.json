@@ -1,0 +1,67 @@
+{
+ "version": 1,
+ "updated": "",
+ "items": [],
+ "categories": [
+  {
+   "id": "konkur",
+   "name": "اخبار کنکور",
+   "emoji": "🎓",
+   "section": "news"
+  },
+  {
+   "id": "exam",
+   "name": "امتحانات",
+   "emoji": "📝",
+   "section": "news"
+  },
+  {
+   "id": "resource",
+   "name": "منبع و جزوه",
+   "emoji": "📚",
+   "section": "news"
+  },
+  {
+   "id": "quiz",
+   "name": "آزمون‌ها",
+   "emoji": "🧪",
+   "section": "news"
+  },
+  {
+   "id": "notice",
+   "name": "اطلاعیه‌ی مهم",
+   "emoji": "📢",
+   "section": "news"
+  },
+  {
+   "id": "method",
+   "name": "روش مطالعه",
+   "emoji": "🧠",
+   "section": "howto"
+  },
+  {
+   "id": "testing",
+   "name": "تست‌زنی",
+   "emoji": "✅",
+   "section": "howto"
+  },
+  {
+   "id": "planning",
+   "name": "برنامه‌ریزی",
+   "emoji": "🗓",
+   "section": "howto"
+  },
+  {
+   "id": "focus",
+   "name": "تمرکز و انگیزه",
+   "emoji": "🎯",
+   "section": "howto"
+  },
+  {
+   "id": "subject",
+   "name": "روش هر درس",
+   "emoji": "📘",
+   "section": "howto"
+  }
+ ]
+}

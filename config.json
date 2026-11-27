@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {"id": "konkur",   "name": "اخبار کنکور",     "emoji": "🎓", "section": "news",  "hint": "ثبت‌نام، تاریخ‌ها، ضرایب، تغییرات قوانین، منابع رسمی کنکور"},
+    {"id": "exam",     "name": "امتحانات",         "emoji": "📝", "section": "news",  "hint": "برنامه و اطلاعیه‌ی امتحانات مدرسه، نهایی، ترم"},
+    {"id": "resource", "name": "منبع و جزوه",      "emoji": "📚", "section": "news",  "hint": "معرفی کتاب، جزوه، فایل آموزشی، فیلم و کلاس"},
+    {"id": "quiz",     "name": "آزمون‌ها",         "emoji": "🧪", "section": "news",  "hint": "آزمون آزمایشی، قلم‌چی، گاج، زمان و سطح آزمون"},
+    {"id": "notice",   "name": "اطلاعیه‌ی مهم",    "emoji": "📢", "section": "news",  "hint": "هر اطلاعیه‌ی فوری یا مهم دیگر درباره‌ی درس و تحصیل"},
+    {"id": "method",   "name": "روش مطالعه",       "emoji": "🧠", "section": "howto", "hint": "شیوه‌های یادگیری، مرور، حفظ کردن، یادداشت‌برداری"},
+    {"id": "testing",  "name": "تست‌زنی",          "emoji": "✅", "section": "howto", "hint": "تکنیک تست زدن، مدیریت زمان آزمون، تحلیل غلط‌ها"},
+    {"id": "planning", "name": "برنامه‌ریزی",      "emoji": "🗓", "section": "howto", "hint": "برنامه‌ی هفتگی و روزانه، مدیریت زمان"},
+    {"id": "focus",    "name": "تمرکز و انگیزه",   "emoji": "🎯", "section": "howto", "hint": "تمرکز، استرس، انگیزه، خواب و سلامت"},
+    {"id": "subject",  "name": "روش هر درس",       "emoji": "📘", "section": "howto", "hint": "نکته‌ی اختصاصی یک درس مثل ریاضی، فیزیک، زیست و..."}
+  ],
+  "confidence_threshold": 0.7,
+  "max_file_mb": 10,
+  "max_items": 400,
+  "keep_rejected_days": 14,
+  "reply_to_sender": true,
+  "vision": true,
+  "llm_retries_per_item": 3
+}

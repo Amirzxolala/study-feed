@@ -1,0 +1,7 @@
+{
+  "first_run_limit": 10,
+  "per_run_limit": 40,
+  "channels": [
+    {"username": "example_channel", "name": "نام نمایشی کانال"}
+  ]
+}
